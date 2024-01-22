@@ -22,6 +22,6 @@ function removeDuplicate(nums) {
     return result;
 }
 
-let nums = [0,0,1,1,1,2,2,3,3,4]
+let nums = [0,0,1,1,1,"A","A",2,2,3,3,4]
 console.log(removeDuplicate(nums));
 // testcase:-  [0,0,1,1,1,2,2,3,3,4]  ""  [1,1,2]

@@ -1,28 +1,24 @@
-function ascendingCheck(arr){
-    let temp=[]
-    let isAcs=false
-    for (let k = 0; k< arr.length; k++) {   
-           temp.push(arr[k])
-   
-    }
-   temp.sort()
-   console.log(temp)
+//Write code to check if an array is sorted in ascending order.
 
-    for(let i=0; i<=arr.length-1;i++){
-        if(arr[i]===temp[i]){
-            isAcs=true
+function ascendingCheck(arr) {
+    let isAsc = false;
+    let temp = [...arr]
+    temp.sort((a, b) => a - b);
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] === temp[i]) {
+            isAsc = true
             continue;
-        }else{
-            isAcs=true
+        } else {
+            isAsc = false
             break;
         }
-    }  
-    if(isAcs){
-        console.log("The array is in ascending order.");
-    }else{
-        console.log("The array is not in ascending order.");
     }
-} 
+    if (isAsc) {
+        console.log('The array is in ascending order.')
+    } else {
+        console.log('The array is not in ascending order.')
+    }
+}
+let arr = [1, 2, 3, 4, 5, 6, 7, 8,9]
 
-let arr=[1,2,3,4,5,66,7,8]
 ascendingCheck(arr)
