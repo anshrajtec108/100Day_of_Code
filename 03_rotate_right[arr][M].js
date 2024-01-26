@@ -11,4 +11,4 @@ function rotateArr(arr,pos){
 }
 let arr=[1,2,3,4]
 
-console.log(rotateArr(arr,2))
+console.log(rotateArr(arr,1))

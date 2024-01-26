@@ -1,5 +1,5 @@
 //Write code to check if an array is sorted in ascending order.
-
+//Better
 function ascendingCheck(arr) {
     let isAsc = false;
     let temp = [...arr]
@@ -19,6 +19,7 @@ function ascendingCheck(arr) {
         console.log('The array is not in ascending order.')
     }
 }
-let arr = [1, 2, 3, 4, 5, 6, 7, 8,9]
 
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8,9]
 ascendingCheck(arr)
