@@ -10,4 +10,4 @@ function linear_search(arr,num){
     return -1
 }
 let arr=[1,2,3,5,68,9,0,5,37,95]
-console.log(linear_search(arr,2))
+console.log(linear_search(arr, 2))
