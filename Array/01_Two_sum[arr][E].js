@@ -26,7 +26,7 @@ const twoSum =(nums, target)=>{
     return number;
 };
 
-nums=[3,2,4]
+nums=[3,2,4,5,7,8,2,6,8]
 console.log("result",twoSum(nums,6))
 
 

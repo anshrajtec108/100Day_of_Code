@@ -7,7 +7,7 @@ const  findMedianSortedArrays = (nums1, nums2)=>{
     combinearray.sort(function(a, b) {
         return a - b;
     })
-    console.log(combinearray);
+    // console.log(combinearray);
     let a=(combinearray.length-1)/2
     // console.log("a",a)
     if (Number.isInteger(a)){
