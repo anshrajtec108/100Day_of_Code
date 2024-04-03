@@ -1,5 +1,6 @@
 function CountVowel(str){
     let count=0
+  let consonants =0
     for (let  i = 0;  i < str.length;  i++) {
         switch (str[i]) {
             case 'a':
@@ -33,11 +34,12 @@ function CountVowel(str){
                 count++
               break ;
             default:
+                consonants++
                 break ;
         }
         
     }
-    return count;
+  return `Vowel is ${count}\nconsonants is ${consonants} `;
 }
 console.log(CountVowel("Ansh"));
 console.log(CountVowel("Amit"));
